@@ -290,7 +290,7 @@ public class PrincipalFrame extends javax.swing.JFrame {
 
     private void limpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiarButtonActionPerformed
         busquedaTextField.setText("");        
-        idTextField.setText("");
+        idTextField.setText("-");
         tituloTextField.setText("");
         numeroTemporadasTextField.setText("");
         numeroEpisodiosTextField.setText("");
