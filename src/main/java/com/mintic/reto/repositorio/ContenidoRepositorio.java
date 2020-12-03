@@ -7,6 +7,7 @@ package com.mintic.reto.repositorio;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.mintic.reto.modelo.Contenido;
+import java.util.List;
 
 /**
  *
@@ -14,5 +15,11 @@ import com.mintic.reto.modelo.Contenido;
  */
 public interface ContenidoRepositorio
         extends JpaRepository<Contenido, Integer> {
+
+    public List<Contenido> findByTipoAndTituloContainingIgnoreCase(
+            String tipo,
+            String titulo);
+
+    public void save(String text);
 
 }
